@@ -1,0 +1,72 @@
+/* Hero Section */
+.hero-section {
+    background: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0') no-repeat center center/cover;
+    padding: 120px 0;
+    color: #fff;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.search-bar .form-control {
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.search-bar .btn-primary {
+    border-radius: 10px;
+}
+
+/* Destinations Section */
+#destinations {
+    background-color: #f8f9fa;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    border-radius: 5px 5px 0 0;
+}
+
+.card-title {
+    color: #333;
+}
+
+.card-text {
+    color: #555;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #333;
+    color: #fff;
+    padding: 60px 0;
+}
+
+#contact .form-control {
+    border-radius: 10px;
+    background: #444;
+    color: #fff;
+}
+
+#contact .form-control:focus {
+    background: #555;
+}
+
+#contact .btn-primary {
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}

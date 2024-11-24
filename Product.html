@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style1.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+    <title>Bakery Website</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class='bx bx-ghost'></i> 泰国旅游</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html"><i class='bx bx-home-alt'></i> หน้าแรก</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="travel.html"><i class='bx bxs-plane-alt'></i> ท่องเที่ยว</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Product.html"><i class='bx bxs-baguette'></i> ร้านเบเกอรี่</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services"><i class='bx bx-cog'></i> บริการ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Abouts.html"><i class='bx bxs-report'></i> เกี่ยวกับเรา</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html"><i class='bx bxs-user-circle'></i> เข้าสู่ระบบ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html"><i class="bx bxs-user-circle"></i> สมัครสมาชิก</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- slider -->
+    <section id="slider">
+        <div id="mySlider" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#mySlider" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#mySlider" data-bs-slide-to="1" class="active"></button>
+                <button type="button" data-bs-target="#mySlider" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item carousel-image-1">
+                    <div class="container">
+                        <div class="carousel-caption d-none d-sm-block">
+                            <h1 class="display-3">ผลประโยชน์</h1>
+                            <p>สินค้าคุณภาพเยี่ยม</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-image-2 active">
+                    <div class="container">
+                        <div class="carousel-caption d-none d-sm-block">
+                            <h1 class="display-3">ผลประโยชน์</h1>
+                            <p>ระบบ POS ที่ทันสมัย</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-image-3">
+                    <div class="container">
+                        <div class="carousel-caption d-none d-sm-block">
+                            <h1 class="display-3">ผลประโยชน์</h1>
+                            <p>ผู้เชี่ยวชาญคอยดูแล</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#mySlider" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mySlider" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-5">
+        <div class="container">
+          <h2 class="text-center mb-4">แกลเลอรี่สินค้า</h2>
+          <p class="text-center mb-5">
+            ขนมปัง เป็นอาหารที่ทำจากแป้งสาลีที่ผสมกับน้ำและยีสต์ หรือผงฟู นอกจากนี้ยังมีการใช้ส่วนผสมอื่น ๆ เพื่อแต่งสี รสชาติและกลิ่น แตกต่างกันไปตามแต่ละประเภทของขนมปัง 
+          </p>
+          <div class="row">
+            <div class="col-md-4 mb-4">
+              <img src="https://images.pexels.com/photos/3256810/pexels-photo-3256810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="ขนมปังโฮลวีต" class="img-fluid rounded">
+              <h4 class="text-center mt-2">ขนมปังโฮลวีต</h4>
+              <p class="text-center">อุดมไปด้วยใยอาหารและวิตามิน</p>
+            </div>
+            <div class="col-md-4 mb-4">
+              <img src="https://images.pexels.com/photos/1047458/pexels-photo-1047458.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="ครัวซองต์" class="img-fluid rounded">
+              <h4 class="text-center mt-2">ครัวซองต์</h4>
+              <p class="text-center">หอมกรุ่น กรอบนอกนุ่มใน</p>
+            </div>
+            <div class="col-md-4 mb-4">
+              <img src="https://images.pexels.com/photos/1755788/pexels-photo-1755788.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="ขนมปังฝรั่งเศส" class="img-fluid rounded">
+              <h4 class="text-center mt-2">ขนมปังฝรั่งเศส</h4>
+              <p class="text-center">กรอบนอก นุ่มใน รสชาติดั้งเดิม</p>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section id="recommended" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">สินค้าแนะนำ</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://images.pexels.com/photos/461060/pexels-photo-461060.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="card-img-top" alt="ขนมปังซินนามอน">
+                        <div class="card-body">
+                            <h5 class="card-title">ขนมปังซินนามอน</h5>
+                            <p class="card-text">หอมกลิ่นซินนามอน หวานละมุน</p>
+                            <a href="#" class="btn btn-primary">สั่งซื้อ</a>
+                            <a href="#" class="btn btn-warning"><i class='bx bxs-cart-add' ></i>ตะกร้า</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://images.pexels.com/photos/267308/pexels-photo-267308.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="card-img-top" alt="ครัวซองต์ช็อกโกแลต">
+                        <div class="card-body">
+                            <h5 class="card-title">ครัวซองต์ช็อกโกแลต</h5>
+                            <p class="card-text">ความหอมของเนยผสานกับช็อกโกแลตนุ่มๆ</p>
+                            <a href="#" class="btn btn-primary">สั่งซื้อ</a>
+                            <a href="#" class="btn btn-warning"><i class='bx bxs-cart-add' ></i>ตะกร้า</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://images.pexels.com/photos/792406/pexels-photo-792406.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="card-img-top" alt="เค้กเนยสด">
+                        <div class="card-body">
+                            <h5 class="card-title">เค้กเนยสด</h5>
+                            <p class="card-text">เนื้อนุ่ม หอมเนย รสชาติกลมกล่อม</p>
+                            <a href="#" class="btn btn-primary">สั่งซื้อ</a>
+                            <a href="#" class="btn btn-warning"><i class='bx bxs-cart-add' ></i>ตะกร้า</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">ความคิดเห็นจากลูกค้า</h2>
+            <div class="row">
+                <div class="col-md-4 text-center mb-4">
+                    <div class="bg-white p-4 rounded shadow">
+                        <p class="mb-0">"ขนมปังสดใหม่และรสชาติอร่อยมาก! จะกลับมาซื้ออีกแน่นอน"</p>
+                        <small class="text-muted">- คุณสมชาย</small>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                    <div class="bg-white p-4 rounded shadow">
+                        <p class="mb-0">"ชอบความหลากหลายของขนมปังที่นี่มาก และบริการก็ยอดเยี่ยม"</p>
+                        <small class="text-muted">- คุณอัญชลี</small>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                    <div class="bg-white p-4 rounded shadow">
+                        <p class="mb-0">"ราคาสมเหตุสมผลและขนมปังคุณภาพดีมาก!"</p>
+                        <small class="text-muted">- คุณอนุชา</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-0">Bake with you</p>
+            <p class="mb-0">นาย พิชัยยุทธ วัชโร 67132327 และ นางสาว ทิวารัตน์ อัมฤทธิ์ 67167139</p>
+            <p class="mt-2 mb-0">© 2024 Bakery Website. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.
