@@ -3,93 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Explorer</title>
+    <title>Bakery Bliss - Online Store</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles/register.css">
+    <style>
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+        .cart-summary {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background: white;
+            padding: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+    </style>
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand fw-bold text-primary" href="#">Travel Explorer</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <a class="navbar-brand" href="#"><i class='bx bxs-cake'></i> Bakery Bliss</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#destinations">Destinations</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#offers">Offers</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero-section text-center" >
-        <div class="container text-white">
-            <h1 class="display-4 fw-bold" style="color: black;">Plan Your Perfect Getaway</h1>
-            <p class="lead" style="color: black;">Find the best destinations, flights, and hotels all in one place.</p>
-            <form class="search-bar mt-4" onsubmit="searchDestination(event)">
-                <div class="row">
-                    <div class="col-md-4">
-                        <input type="text" class="form-control" id="destination" placeholder="Where to go?" />
-                    </div>
-                    <div class="col-md-3">
-                        <input type="date" class="form-control" id="departureDate" />
-                    </div>
-                    <div class="col-md-3">
-                        <input type="date" class="form-control" id="returnDate" />
-                    </div>
-                    <div class="col-md-2">
-                        <button type="submit" class="btn btn-primary w-100">Search</button>
-                    </div>
-                </div>
-            </form>
+    <header class="hero-section text-center bg-light py-5">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Welcome to Bakery Bliss</h1>
+            <p class="lead">Freshly baked goods delivered to your door.</p>
+            <a href="#products" class="btn btn-primary btn-lg">Shop Now</a>
         </div>
     </header>    
 
-    <!-- Destinations -->
-    <section id="destinations" class="py-5">
+    <!-- Product Section -->
+    <section id="products" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-4">Explore Popular Destinations</h2>
+            <h2 class="text-center mb-4">Our Products</h2>
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="https://images.pexels.com/photos/1308940/pexels-photo-1308940.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="Paris">
+                        <img src="https://images.pexels.com/photos/3026808/pexels-photo-3026808.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="card-img-top" alt="Chocolate Cake">
                         <div class="card-body">
-                            <h5 class="card-title">Paris, France</h5>
-                            <p class="card-text">Experience the city of love and lights.</p>
-                            <button class="btn btn-outline-primary" onclick="showAlert('Paris')">Learn More</button>
+                            <h5 class="card-title">Chocolate Cake</h5>
+                            <p class="card-text">Rich and moist chocolate delight. <strong>$25</strong></p>
+                            <button class="btn btn-primary" onclick="addToCart('Chocolate Cake', 25)">Add to Cart</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="https://images.pexels.com/photos/2614818/pexels-photo-2614818.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="Tokyo">
+                        <img src="https://images.pexels.com/photos/6049692/pexels-photo-6049692.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="card-img-top" alt="Croissants">
                         <div class="card-body">
-                            <h5 class="card-title">Tokyo, Japan</h5>
-                            <p class="card-text">Immerse yourself in modern culture and history.</p>
-                            <button class="btn btn-outline-primary" onclick="showAlert('Tokyo')">Learn More</button>
+                            <h5 class="card-title">Croissants</h5>
+                            <p class="card-text">Flaky and buttery pastries. <strong>$15</strong></p>
+                            <button class="btn btn-primary" onclick="addToCart('Croissants', 15)">Add to Cart</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad" class="card-img-top" alt="New York">
+                        <img src="https://images.pexels.com/photos/2095641/pexels-photo-2095641.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="card-img-top" alt="Donuts">
                         <div class="card-body">
-                            <h5 class="card-title">New York, USA</h5>
-                            <p class="card-text">Discover the Big Apple and its iconic sights.</p>
-                            <button class="btn btn-outline-primary" onclick="showAlert('New York')">Learn More</button>
+                            <h5 class="card-title">Donuts</h5>
+                            <p class="card-text">Soft and sweet, perfect for every moment. <strong>$10</strong></p>
+                            <button class="btn btn-primary" onclick="addToCart('Donuts', 10)">Add to Cart</button>
                         </div>
                     </div>
                 </div>
@@ -97,7 +87,32 @@
         </div>
     </section>
 
+    <!-- Cart Summary -->
+    <div id="cart-summary" class="cart-summary">
+        <h5>Cart</h5>
+        <ul id="cart-items" class="list-unstyled mb-3"></ul>
+        <p>Total: <span id="cart-total">$0</span></p>
+        <button class="btn btn-success">Checkout</button>
+    </div>
+
+    <script>
+        let cart = [];
+        let total = 0;
+
+        function addToCart(productName, price) {
+            cart.push({ productName, price });
+            total += price;
+            updateCartUI();
+        }
+
+        function updateCartUI() {
+            const cartItems = document.getElementById('cart-items');
+            const cartTotal = document.getElementById('cart-total');
+            cartItems.innerHTML = cart.map(item => `<li>${item.productName} - $${item.price}</li>`).join('');
+            cartTotal.textContent = `$${total}`;
+        }
+    </script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/travel.js"></script>
 </body>
 </html>
