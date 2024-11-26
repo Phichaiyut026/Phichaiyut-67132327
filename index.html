@@ -1,317 +1,385 @@
 <!DOCTYPE html>
 <html lang="th">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ร้าน 泰国烘焙 - เบเกอรี่คุณภาพ</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
-  <style>
-    body {
-      font-family: 'Prompt', sans-serif;
-      background-color: #f6eade;
-      /* เปลี่ยน font */
-    }
-
-    .card-img-top {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 5px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      transition: transform 0.2s;
-    }
-
-    .card-img-top:hover {
-      transform: scale(1.05);
-    }
-
-    .hero-section {
-      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url('https://images.pexels.com/photos/1030962/pexels-photo-1030962.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') no-repeat center center/cover;
-      color: #fff;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-      animation: hero-animation 5s ease-in-out infinite alternate;
-    }
-
-    @keyframes hero-animation {
-      from {
-        background-position: 0% 50%;
-      }
-
-      to {
-        background-position: 100% 50%;
-      }
-    }
-
-    .btn-primary {
-      background-color: #d9b38c;
-      border-color: #d9b38c;
-    }
-
-    .btn-primary:hover {
-      background-color: #c79e75;
-      border-color: #c79e75;
-    }
-
-    .section-padding {
-      padding-top: 50px;
-      padding-bottom: 50px;
-      border-radius: 30px;
-    }
-    .video-container{
-        position: relative;
-        overflow: hidden;
-    }
-    .video-overlay{
-        text-align: center;
-        background: rgba(0,0,0,0.5);
-        padding: 10px 20px;
-        border-radius: 10px;
-    }
-    .text-shadow{
-        text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
-    }
-    /* Spinner Styles */
-    .spinner-overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(255, 255, 255, 0.8);
-      z-index: 1050;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      display: none; /* ซ่อนโดยเริ่มต้น */
-    }
-
-    .spinner {
-      width: 3rem;
-      height: 3rem;
-      border: 0.4rem solid rgba(0, 0, 0, 0.2);
-      border-top: 0.4rem solid #007bff;
-      border-radius: 50%;
-      animation: spin 1s linear infinite;
-    }
-
-    @keyframes spin {
-      0% {
-        transform: rotate(0deg);
-      }
-
-      100% {
-        transform: rotate(360deg);
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>泰国烘焙 - เบเกอรี่คุณภาพ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="styles/silde.css">
+    <link rel="stylesheet" href="styles/fristHeader.css">
+    <link rel="stylesheet" href="styles/galary.css">
 </head>
-
 <body>
+    <!-- Navigation -->
+     <header>
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+              Travel&Bakery
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">หน้าแรก</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Product.html">สินค้า</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#custom-order">ออเดอร์พิเศษ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="NewIndex.html">หน้าหลักใหม่</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">ติดต่อ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav><br>
+     </header>
+    
 
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- Hero Section -->
+    <section id="home" class="hero-section" data-aos="fade-up">
+      <div class="slider">
+        <!-- list Items -->
+        <div class="list">
+          <div class="item active">
+            <img src="https://images.pexels.com/photos/2104742/pexels-photo-2104742.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+            <div class="content">
+              <p>United States of America</p>
+              <h1>Golden Gate</h1>
+              <p>
+                สะพานโกลเดนเกต (Golden Gate Bridge) ซึ่งตั้งอยู่ในเมืองซานฟรานซิสโก รัฐแคลิฟอร์เนีย ประเทศสหรัฐอเมริกา เป็นหนึ่งในสะพานแขวนที่มีชื่อเสียงมากที่สุดในโลก ด้วยการออกแบบที่โดดเด่นและสีแดงอมส้มที่เป็นเอกลักษณ์
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="https://images.pexels.com/photos/13010287/pexels-photo-13010287.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+            <div class="content">
+              <p>Turkey</p>
+              <h2>Cappadocia</h2>
+              <p>
+                บอลลูนลมร้อน ที่เป็นสัญลักษณ์สำคัญของ คัปปาโดเกีย (Cappadocia) ซึ่งตั้งอยู่ในประเทศตุรกี (Turkey) และเป็นหนึ่งในสถานที่ท่องเที่ยวที่มีเอกลักษณ์เฉพาะตัวมากที่สุดในโลก
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="https://images.pexels.com/photos/632522/pexels-photo-632522.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+            <div class="content">
+              <p>Italy</p>
+              <h2>Cinque Terre</h2>
+              <p>
+                หมู่บ้าน Cinque Terre ในประเทศอิตาลี (Italy) ซึ่งเป็นหนึ่งในสถานที่ท่องเที่ยวที่มีชื่อเสียงในแถบชายฝั่งริเวียราของอิตาลี
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="https://images.pexels.com/photos/2082103/pexels-photo-2082103.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+            <div class="content">
+              <p>Paris, France</p>
+              <h2>Eiffel Tower</h2>
+              <p>
+                หอไอเฟล (Eiffel Tower) ซึ่งตั้งอยู่ในกรุงปารีส ประเทศฝรั่งเศส (Paris, France) เป็นหนึ่งในสัญลักษณ์ที่โด่งดังที่สุดของประเทศฝรั่งเศสและเป็นที่รู้จักไปทั่วโลก
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="https://images.pexels.com/photos/46253/mt-fuji-sea-of-clouds-sunrise-46253.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+            <div class="content">
+              <p>Japan</p>
+              <h2>Mount Fuji</h2>
+              <p>
+                ภูเขาไฟฟูจิ (Mount Fuji) ซึ่งเป็นภูเขาที่สูงที่สุดและเป็นสัญลักษณ์สำคัญของประเทศญี่ปุ่น (Japan)
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- button arrows -->
+        <div class="arrows">
+          <button id="prev"><</button>
+          <button id="next">></button>
+        </div>
+        <!-- thumbnail -->
+        <div class="thumbnail" data-aos="fade-up">
+          <div class="item active">
+            <img src="https://images.pexels.com/photos/2104742/pexels-photo-2104742.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+            <div class="content">Golden Gate Bridge</div>
+          </div>
+          <div class="item">
+            <img src="https://images.pexels.com/photos/13010287/pexels-photo-13010287.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+            <div class="content">Cappadocia</div>
+          </div>
+          <div class="item">
+            <img src="https://images.pexels.com/photos/632522/pexels-photo-632522.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+            <div class="content">Cinque Terre</div>
+          </div>
+          <div class="item">
+            <img src="https://images.pexels.com/photos/2082103/pexels-photo-2082103.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+            <div class="content">Eiffel Tower</div>
+          </div>
+          <div class="item">
+            <img src="https://images.pexels.com/photos/46253/mt-fuji-sea-of-clouds-sunrise-46253.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+            <div class="content">Mount Fuji</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="hero-section" data-aos="fade-up">
+      <div class="wrapper">
+        <div class="container-galary">
+            <input type="radio" name="slide" id="c1" checked>
+            <label for="c1" class="card">
+                <div class="row">
+                    <div class="description">
+                        <p>Natuure - Discover the Wonders of Nature</p>
+                    </div>
+                </div>
+            </label>
+            <input type="radio" name="slide" id="c2">
+            <label for="c2" class="card">
+                <div class="row">
+                    <div class="description">
+                        <p>Natuure - Discover the Wonders of Nature</p>
+                    </div>
+                </div>
+            </label>
+            <input type="radio" name="slide" id="c3">
+            <label for="c3" class="card">
+                <div class="row">
+                    <div class="description">
+                        <p>Natuure - Discover the Wonders of Nature</p>
+                    </div>
+                </div>
+            </label>
+            <input type="radio" name="slide" id="c4">
+            <label for="c4" class="card">
+                <div class="row">
+                    <div class="description">
+                        <p>Natuure - Discover the Wonders of Nature</p>
+                    </div>
+                </div>
+            </label>
+        </div>
+    </div>
+    </section>
+    <section id="bakery-video" class="section-padding text-center" data-aos="fade-up">
       <div class="container">
-        <a class="navbar-brand" href="#"><i class='bx bx-ghost'></i> 泰国烘焙</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="index.html"><i class='bx bx-home-alt'></i> หน้าแรก</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Product.html"><i class='bx bxs-shopping-bag'></i> สินค้า</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#services"><i class='bx bx-cog'></i> บริการ</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="Apple.html"><i class="bx bx-cog"></i>Apple</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="Abouts.html"><i class='bx bxs-report'></i> เกี่ยวกับเรา</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <div class="spinner-overlay" id="spinner-overlay">
-    <div class="spinner"></div>
-  </div>
-  <section class="hero-section text-center py-5" data-aos="fade-in">
-    <div class="container">
-      <h1 class="display-4">เบเกอรี่คุณภาพ 泰国烘焙</h1>
-      <p class="lead" data-aos="fade-up" data-aos-delay="200">สดใหม่จากเตา ทุกคำคือความสุข</p>
-      <a href="#products" class="btn btn-primary btn-lg" data-aos="zoom-in" data-aos-delay="400">ดูสินค้า</a>
-    </div>
-  </section>
-  
-  <section id="products" class="section-padding" data-aos="fade-up">
-    <div class="container">
-      <h2 class="text-center mb-5">สินค้าของเรา</h2>
-      <div class="row">
-        <div class="col-md-4" data-aos="zoom-in">
-          <div class="card">
-            <img src="https://images.pexels.com/photos/7687526/pexels-photo-7687526.jpeg" class="card-img-top" alt="เค้ก">
-            <div class="card-body">
-              <h5 class="card-title">เค้กช็อกโกแลต</h5>
-              <p class="card-text">เค้กเนื้อนุ่ม รสช็อกโกแลตเข้มข้น หอมหวานพอดี</p>
-              <a href="#" class="btn btn-primary">ดูสินค้า</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
-          <div class="card">
-            <img src="https://images.pexels.com/photos/1510682/pexels-photo-1510682.jpeg" class="card-img-top" alt="ครัวซองต์">
-            <div class="card-body">
-              <h5 class="card-title">ครัวซองต์</h5>
-              <p class="card-text">ครัวซองต์กรอบนอกนุ่มใน หอมกรุ่นจากเตา</p>
-              <a href="#" class="btn btn-primary">ดูสินค้า</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="400">
-          <div class="card">
-            <img src="https://images.pexels.com/photos/3274104/pexels-photo-3274104.jpeg" class="card-img-top" alt="โดนัท">
-            <div class="card-body">
-              <h5 class="card-title">โดนัท</h5>
-              <p class="card-text">โดนัทเนื้อนุ่ม หวานละมุนพร้อมไส้หลากหลาย</p>
-              <a href="#" class="btn btn-primary">ดูสินค้า</a>
-            </div>
+        <div class="video-container position-relative" style="max-width: 800px; margin: auto;">
+          <video autoplay muted loop playsinline class="w-100 rounded" data-aos="fade-up"
+                 style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); opacity: 0.6; filter: brightness(70%);"
+                 data-aos="fade-in">
+            <source src="img/bakery.mp4" type="video/mp4">
+            เบราว์เซอร์ของคุณไม่รองรับวิดีโอ
+          </video>
+          <div class="video-overlay position-absolute top-50 start-50 translate-middle text-white text-shadow" data-aos="zoom-in" data-aos-delay="200">
+            <h3>ทำเบเกอรี่ด้วยความรัก</h3>
+            <p>ทุกขั้นตอนคือความใส่ใจ</p>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  
-  <section id="bakery-video" class="section-padding text-center" data-aos="fade-up">
-    <div class="container">
-      <div class="video-container position-relative" style="max-width: 800px; margin: auto;">
-        <video autoplay muted loop playsinline class="w-100 rounded" 
-               style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); opacity: 0.6; filter: brightness(70%);"
-               data-aos="fade-in">
-          <source src="img/bakery.mp4" type="video/mp4">
-          เบราว์เซอร์ของคุณไม่รองรับวิดีโอ
-        </video>
-        <div class="video-overlay position-absolute top-50 start-50 translate-middle text-white text-shadow" data-aos="zoom-in" data-aos-delay="200">
-          <h3>ทำเบเกอรี่ด้วยความรัก</h3>
-          <p>ทุกขั้นตอนคือความใส่ใจ</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <section id="services" class="section-padding bg-light" data-aos="fade-up">
-    <div class="container-services">
-      <h2 class="text-center mb-5">บริการของเรา</h2>
-      <div class="row">
-        <div class="col-md-4" data-aos="flip-left">
-          <div class="card">
-            <div class="card-body text-center">
-              <i class='bx bxs-package bx-lg'></i>
-              <h5 class="card-title">บริการจัดส่ง</h5>
-              <p class="card-text">จัดส่งถึงบ้านคุณอย่างรวดเร็วและปลอดภัย</p>
+    </section>
+    <!-- Product Section -->
+    <section id="products" class="product-section" data-aos="fade-up">
+        <div class="container">
+          <div class="conteudo-geral js-conteudo-geral">
+            <h1>Bakery</h1>
+            <div class="componente-interno-geral">
+              <div class="componente">
+                <div class="componente-sem-rolagem">
+                  <div class="componente-interno">
+                    <div class="componente-fundo-imagem"></div>
+                    <div class="componente-visual-inicial">
+                      <h2 class="componente-titulo">Baguette</h2>
+                    </div>
+                    <div class="componente-content">
+                      <div class="componente-text">Baguette</div>
+                      <p> ขนมปังฝรั่งเศส (Baguette) ซึ่งเป็นขนมปังชนิดหนึ่งที่มีต้นกำเนิดจากประเทศฝรั่งเศส มีเอกลักษณ์ในด้านรูปร่างที่ยาวและเปลือกที่กรอบ</p>
+                      <p>ข้อมูลเพิ่มเติมเกี่ยวกับ Baguette <br>
+                        ที่มา: ขนมปังฝรั่งเศสเริ่มเป็นที่นิยมในช่วงต้นศตวรรษที่ 20 และกลายเป็นสัญลักษณ์ของวัฒนธรรมการกินในฝรั่งเศส <br>
+                        ลักษณะเด่น:รูปร่างยาวเรียว
+                        เปลือกกรอบ และเนื้อในนุ่ม 
+                        มีรสชาติเรียบง่ายแต่หอมกลิ่นแป้งและยีสต์ <br>
+                        วิธีการทำ:
+                        ทำจากแป้งสาลี ยีสต์ น้ำ และเกลือ
+                        ปล่อยให้ขึ้นฟูและอบในอุณหภูมิสูงเพื่อให้ได้เปลือกที่กรอบ <br>
+                        วิธีรับประทาน:
+                        นิยมรับประทานคู่กับชีส เนย หรือแยม
+                        ใช้ทำแซนด์วิช หรือรับประทานเป็นส่วนหนึ่งของอาหารเช้า <br>
+                        วัฒนธรรม: ในฝรั่งเศส ขนมปังบาแก็ตต์เป็นสิ่งที่พบได้ในชีวิตประจำวัน และมักซื้อสดใหม่จากร้านเบเกอรี่ทุกวัน</p>
+                      <div class="componente-botao-fechar"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="componente">
+                <div class="componente-sem-rolagem">
+                  <div class="componente-interno">
+                    <div class="componente-fundo-imagem"></div>
+                    <div class="componente-visual-inicial">
+                      <h2 class="componente-titulo">Croissant</h2>
+                    </div>
+                    <div class="componente-content">
+                      <div class="componente-text">Croissant</div>
+                      <p> ครัวซองต์ (Croissant) ซึ่งเป็นขนมอบชนิดหนึ่งที่มีต้นกำเนิดจากฝรั่งเศส เป็นที่รู้จักในฐานะขนมปังที่มีรูปทรงโค้งคล้ายพระจันทร์เสี้ยวและเนื้อสัมผัสที่เป็นชั้นกรอบบางจากการพับเนยในแป้ง</p>
+                      <p>
+                        ข้อมูลเพิ่มเติมเกี่ยวกับครัวซองต์ <br>
+                        ต้นกำเนิด:
+                        ถึงแม้จะเป็นที่นิยมในฝรั่งเศส แต่มีต้นกำเนิดจากประเทศออสเตรียในศตวรรษที่ 17 และได้รับการพัฒนาสูตรในฝรั่งเศส<br>
+                        ลักษณะเด่น:
+                        ทำจากแป้งพัฟ (Puff Pastry) ซึ่งประกอบด้วยชั้นของแป้งและเนยที่ถูกพับซ้ำๆ ทำให้ได้เนื้อสัมผัสที่เบาและกรอบ
+                        มีรสชาติหอมมันจากเนย<br>
+                        วิธีรับประทาน:
+                        รับประทานแบบดั้งเดิมคู่กับกาแฟหรือชา
+                        ใส่ไส้ต่างๆ เช่น ช็อกโกแลต อัลมอนด์ หรือแฮมและชีส<br>
+                        ความนิยม:
+                        ครัวซองต์เป็นขนมที่พบได้ทั่วไปในร้านเบเกอรี่ทั่วโลก และเป็นส่วนหนึ่งของอาหารเช้าในหลายประเทศ<br>
+                        วิธีทำ:
+                        การทำครัวซองต์ต้องใช้กระบวนการพับแป้งและเนยซ้ำหลายครั้งเพื่อสร้างชั้น
+                        อบในเตาอบจนได้สีเหลืองทองและกลิ่นหอม</p>
+                      <div class="componente-botao-fechar"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="componente">
+                <div class="componente-sem-rolagem">
+                  <div class="componente-interno">
+                    <div class="componente-fundo-imagem"></div>
+                    <div class="componente-visual-inicial">
+                      <h2 class="componente-titulo">Pain au Chocolat</h2>
+                    </div>
+                    <div class="componente-content">
+                      <div class="componente-text">
+                        Pain au Chocolat
+                      </div>
+                      <p> ครัวซองต์ช็อกโกแลต (Pain au Chocolat) ซึ่งเป็นขนมอบที่มีต้นกำเนิดจากประเทศฝรั่งเศส เป็นที่นิยมในหมู่คนรักขนมอบทั่วโลก</p>
+                      <p>ข้อมูลเพิ่มเติมเกี่ยวกับครัวซองต์ <br>
+                        ต้นกำเนิด:
+                        ถึงแม้จะเป็นที่นิยมในฝรั่งเศส แต่มีต้นกำเนิดจากประเทศออสเตรียในศตวรรษที่ 17 และได้รับการพัฒนาสูตรในฝรั่งเศส <br>
+                        ลักษณะเด่น:
+                        ทำจากแป้งพัฟ (Puff Pastry) ซึ่งประกอบด้วยชั้นของแป้งและเนยที่ถูกพับซ้ำๆ ทำให้ได้เนื้อสัมผัสที่เบาและกรอบ
+                        มีรสชาติหอมมันจากเนย <br>
+                        วิธีรับประทาน:
+                        รับประทานแบบดั้งเดิมคู่กับกาแฟหรือชา
+                        ใส่ไส้ต่างๆ เช่น ช็อกโกแลต อัลมอนด์ หรือแฮมและชีส <br>
+                        ความนิยม:
+                        ครัวซองต์เป็นขนมที่พบได้ทั่วไปในร้านเบเกอรี่ทั่วโลก และเป็นส่วนหนึ่งของอาหารเช้าในหลายประเทศ <br>
+                        วิธีทำ:
+                        การทำครัวซองต์ต้องใช้กระบวนการพับแป้งและเนยซ้ำหลายครั้งเพื่อสร้างชั้น
+                        อบในเตาอบจนได้สีเหลืองทองและกลิ่นหอม</p>
+                      <div class="componente-botao-fechar"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="componente">
+                <div class="componente-sem-rolagem">
+                  <div class="componente-interno">
+                    <div class="componente-fundo-imagem"></div>
+                    <div class="componente-visual-inicial">
+                      <h2 class="componente-titulo">Sourdough Bread</h2>
+                    </div>
+                    <div class="componente-content">
+                      <div class="componente-text">Sourdough Bread</div>
+                      <p> ขนมปังแซาวโดว์ (Sourdough Bread) ซึ่งเป็นขนมปังที่มีรสชาติเปรี้ยวเล็กน้อยและเนื้อสัมผัสแน่น นิยมมากในหมู่คนรักขนมปังที่ใส่ใจสุขภาพ เนื่องจากทำจากยีสต์ธรรมชาติที่เกิดจากกระบวนการหมัก</p>
+                      <p>ข้อมูลเพิ่มเติมเกี่ยวกับขนมปังแซาวโดว์ <br>
+                        ลักษณะเด่น:
+                        เนื้อสัมผัสแน่น มีรูอากาศขนาดต่างๆ
+                        เปลือกขนมปังกรอบแข็งและมีกลิ่นหอมเฉพาะตัว
+                        รสชาติเปรี้ยวเล็กน้อย เนื่องจากกระบวนการหมัก<br>
+                        วัตถุดิบหลัก:
+                        แป้งสาลี, น้ำ, และยีสต์ธรรมชาติ (Sourdough starter)
+                        ไม่มีสารเติมแต่งหรือยีสต์เชิงพาณิชย์<br>
+                        กระบวนการทำ:
+                        ใช้เวลาในการหมักนาน เพื่อพัฒนารสชาติและเนื้อสัมผัส
+                        อบในเตาอบที่ร้อนจัด เพื่อให้ได้เปลือกที่กรอบ<br>
+                        ประโยชน์ทางสุขภาพ:
+                        ย่อยง่ายกว่าเนื่องจากมีการหมักที่ช่วยย่อยแป้งบางส่วน
+                        มีค่าดัชนีน้ำตาลต่ำ (Low Glycemic Index)
+                        ให้รสชาติอร่อยแบบธรรมชาติ</p>
+                      <div class="componente-botao-fechar"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="componente">
+                <div class="componente-sem-rolagem">
+                  <div class="componente-interno">
+                    <div class="componente-fundo-imagem"></div>
+                    <div class="componente-visual-inicial">
+                      <h2 class="componente-titulo">Seeded Bread Roll</h2>
+                    </div>
+                    <div class="componente-content">
+                      <div class="componente-text">Seeded Bread Roll</div>
+                      <p> ขนมปังโรลโรยเมล็ดธัญพืช (Seeded Bread Roll) ซึ่งเป็นขนมปังขนาดเล็กที่มักโรยด้วยเมล็ดธัญพืชหลากหลายชนิด เช่น งา เมล็ดทานตะวัน หรือเมล็ดฟักทอง เพื่อเพิ่มความกรุบกรอบและคุณค่าทางโภชนาการ</p>
+                      <p>ข้อมูลเพิ่มเติมเกี่ยวกับ Seeded Bread Roll <br>
+                        ลักษณะเด่น:
+                        ขนาดเล็กพอดีคำ รูปทรงกลมหรือวงรี
+                        โรยหน้าด้วยเมล็ดธัญพืชที่ให้รสชาติและเนื้อสัมผัสที่แตกต่าง
+                        เนื้อขนมปังนุ่มหรือแน่น ขึ้นอยู่กับสูตร<br>
+                        ส่วนประกอบ:
+                        แป้งสาลี ยีสต์ น้ำตาล เกลือ และเมล็ดธัญพืชหลากชนิด
+                        บางสูตรอาจมีส่วนผสมเพิ่มเติม เช่น น้ำมันมะกอก หรือนม<br>
+                        ประโยชน์ทางสุขภาพ:
+                        เมล็ดธัญพืชให้โปรตีน ไขมันดี และไฟเบอร์
+                        เหมาะสำหรับผู้ที่มองหาขนมปังเพื่อสุขภาพ<br>
+                        การใช้งาน:
+                        รับประทานเป็นอาหารเช้าหรือของว่าง
+                        ใช้ทำแซนด์วิชขนาดเล็ก หรือเสิร์ฟคู่กับซุป<br>
+                        วิธีการทำ:
+                        ขึ้นรูปขนมปังเป็นก้อนเล็กๆ
+                        ทาน้ำบนผิวขนมปังและโรยเมล็ดธัญพืชก่อนอบ</p>
+                      <div class="componente-botao-fechar"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
-          <div class="card">
-            <div class="card-body text-center">
-              <i class='bx bxs-cake bx-lg'></i>
-              <h5 class="card-title">รับสั่งทำเค้ก</h5>
-              <p class="card-text">รับสั่งทำเค้กสำหรับทุกโอกาสพิเศษของคุณ</p>
+    </section>
+    <!-- Our Story Section -->
+    <section id="story" class="story-section" data-aos="fade-up">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="https://images.pexels.com/photos/13399520/pexels-photo-13399520.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Our Bakery" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6">
+                    <h2>เรื่องราวของเรา</h2>
+                    <p>จากครอบครัวเล็กๆ สู่ร้านเบเกอรี่ที่คนรักกัน เราเริ่มต้นจากความหลงใหลในการทำขนม และต้องการสร้างความสุขให้กับทุกคน</p>
+                </div>
             </div>
-          </div>
         </div>
-        <div class="col-md-4" data-aos="flip-left" data-aos-delay="400">
-          <div class="card">
-            <div class="card-body text-center">
-              <i class='bx bxs-gift bx-lg'></i>
-              <h5 class="card-title">จัดชุดของขวัญ</h5>
-              <p class="card-text">จัดชุดของขวัญสำหรับเทศกาลต่างๆ</p>
+    </section><br>
+    <!-- Footer -->
+    <footer>
+        <div class="container" data-aos="fade-up">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>เกี่ยวกับเรา</h5>
+                    <p>เบเกอรี่ที่สร้างความสุขมาแล้วกว่า 10 ปี</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>ติดต่อ</h5>
+                    <p>โทร: 012-345-6789</p>
+                    <p>อีเมล: hello@bakery.com</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>ติดตามเรา</h5>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/sinaum.king"><i class='bx bxl-facebook'></i></a>
+                        <a href="#"><i class='bx bxl-instagram'></i></a>
+                        <a href="#"><i class='bx bxl-line'></i></a>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="section-padding">
-    <div class="container">
-      <h2 class="text-center mb-5">ติดต่อเรา</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.219998014437!2d100.51311091417375!3d13.75395970091435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29910098b999f%3A0xd57788d88d23dd6b!2z4LiE4LiT4Liw4Lin4Li04LiX4Lii4Liy4LiB4Liy4Lij4LiI4Lix4LiUIOC4geC4iuC4o-C4qOC4suC4peC4seC4ouC4quC4oeC4qOC4p-C4quC4meC4hOC4o-C4qOC4meC4hOC4o-C4qOC4mQ!5e0!3m2!1sth!2sth!4v1670074848967!5m2!1sth!2sth"
-            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div class="col-md-6">
-          <form>
-            <div class="mb-3">
-              <label for="name" class="form-label">ชื่อ</label>
-              <input type="text" class="form-control" id="name" placeholder="กรุณากรอกชื่อของคุณ">
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">อีเมล</label>
-              <input type="email" class="form-control" id="email" placeholder="กรุณากรอกอีเมลของคุณ">
-            </div>
-            <div class="mb-3">
-              <label for="message" class="form-label">ข้อความ</label>
-              <textarea class="form-control" id="message" rows="5" placeholder="กรุณากรอกข้อความของคุณ"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">ส่งข้อความ</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="bg-dark text-white text-center py-3">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h5>เกี่ยวกับเรา</h5>
-          <p><a href="#about">ประวัติความเป็นมา</a></p>
-        </div>
-        <div class="col-md-4">
-          <h5>ติดต่อเรา</h5>
-          <p>เบอร์โทรศัพท์: 012-345-6789</p>
-          <p>อีเมล: info@bakery.com</p>
-        </div>
-        <div class="col-md-4">
-          <h5>โซเชียลมีเดีย</h5>
-          <a href="#"><i class='bx bxl-facebook-square'></i></a>
-          <a href="#"><i class='bx bxl-instagram'></i></a>
-          <a href="#"><i class='bx bxl-line'></i></a>
-        </div>
-      </div>
-    </div>
-    <p class="mb-0">&copy; 2024 泰国烘焙 สงวนลิขสิทธิ์</p>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init();
-
-    // ฟังก์ชันแสดง Spinner
-    function showSpinner() {
-      document.getElementById("spinner-overlay").style.display = "flex";
-    }
-    window.addEventListener("load", function () {
-      setTimeout(function () {
-        document.getElementById("spinner-overlay").style.display = "none";
-      }, 1000); // ซ่อน Spinner หลังจาก 1 วินาที
-    });
-  </script>
+    </footer>
+    <script src="js/silde.js"></script>
+    <script src="js/fristHeader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
-
 </html>
