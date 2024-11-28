@@ -4,244 +4,150 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ร้านค้า - Apple</title>
+  <title>ร้านค้า - Bakery</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="img/logo2.png">
   <link rel="stylesheet" href="styles/index.css">
 </head>
-
 <body>
   <nav class="navbar navbar-expand-lg">
     <div class="container">
-
       <a class="navbar-brand" href="index.html">
         <img src="img/LOGO.png" alt="Logo" style="width:60px;">
-        Bakery</a>
+        Bakery
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="Product.html">Product</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Abouts.html">Abouts</a>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="travel.html">Travel</a></li>
+          <li class="nav-item"><a class="nav-link" href="Abouts.html">Abouts</a></li>
         </ul>
       </div>
     </div>
   </nav>
-   <!-- Hero Section -->
-   <section class="hero-section">
-    <div class="container">
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container text-center">
       <h1>ร้านของเรา ให้ความมหัศจรรย์</h1>
       <p>เป็นของขวัญในช่วงเทศกาลนี้</p>
     </div>
   </section>
-  <div class="categories">
-    <div class="category-item" style="background-image: url('https://images.pexels.com/photos/267308/pexels-photo-267308.jpeg?auto=compress&cs=tinysrgb&w=800');">
-      <p>เค้กช็อกโกแลต</p>
-    </div>
-    <div class="category-item" style="background-image: url('https://images.pexels.com/photos/1055271/pexels-photo-1055271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');">
-      <p>ครัวซองต์</p>
-    </div>
-    <div class="category-item" style="background-image: url('https://images.pexels.com/photos/940872/pexels-photo-940872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');">
-      <p>โดนัท</p>
-    </div>
-    <div class="category-item" style="background-image: url('https://images.pexels.com/photos/792406/pexels-photo-792406.jpeg?auto=compress&cs=tinysrgb&w=800');">
-      <p>มาการอง</p>
-    </div>
-    <div class="category-item" style="background-image: url('https://images.pexels.com/photos/1397309/pexels-photo-1397309.jpeg?auto=compress&cs=tinysrgb&w=800');">
-      <p>คุกกี้</p>
-    </div>
-  </div><br>
 
   <section class="section-padding">
     <div class="container">
       <h3 class="gradient-text">สินค้าของเรา Bakery Store</h3>
-      <!-- Carousel -->
-      <div id="bakeryCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <!-- Slide 1 -->
-          <div class="carousel-item active">
-            <div class="row">
-              <div class="col-md-4">
-                <div class="card product-card">
-                  <img src="https://images.pexels.com/photos/267308/pexels-photo-267308.jpeg?auto=compress&cs=tinysrgb&w=800"
-                    alt="เค้กช็อกโกแลต" class="card-img-top">
-                  <div class="card-body">
-                    <h5 class="card-title">เค้กช็อกโกแลต</h5>
-                    <p class="card-text">เค้กเนื้อนุ่ม รสช็อกโกแลตเข้มข้น</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card product-card">
-                  <img src="https://images.pexels.com/photos/1055271/pexels-photo-1055271.jpeg?auto=compress&cs=tinysrgb&w=800"
-                    alt="ครัวซองต์" class="card-img-top">
-                  <div class="card-body">
-                    <h5 class="card-title">ครัวซองต์</h5>
-                    <p class="card-text">หอมกรุ่นจากเตา กรอบนอกนุ่มใน</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card product-card">
-                  <img src="https://images.pexels.com/photos/940872/pexels-photo-940872.jpeg?auto=compress&cs=tinysrgb&w=800"
-                    alt="โดนัท" class="card-img-top">
-                  <div class="card-body">
-                    <h5 class="card-title">โดนัท</h5>
-                    <p class="card-text">เนื้อนุ่ม หวานละมุน หลากหลายไส้</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Slide 2 -->
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-md-4">
-                <div class="card product-card">
-                  <img src="https://images.pexels.com/photos/792406/pexels-photo-792406.jpeg?auto=compress&cs=tinysrgb&w=800"
-                    alt="มาการอง" class="card-img-top">
-                  <div class="card-body">
-                    <h5 class="card-title">มาการอง</h5>
-                    <p class="card-text">มาการองสีสันสดใส กรอบนอกนุ่มใน</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card product-card">
-                  <img src="https://images.pexels.com/photos/1397309/pexels-photo-1397309.jpeg?auto=compress&cs=tinysrgb&w=800"
-                    alt="คุกกี้" class="card-img-top">
-                  <div class="card-body">
-                    <h5 class="card-title">คุกกี้</h5>
-                    <p class="card-text">คุกกี้กรอบ หอมเนยแท้</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card product-card">
-                  <img src="https://images.pexels.com/photos/5852256/pexels-photo-5852256.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    alt="พายแอปเปิ้ล" class="card-img-top">
-                  <div class="card-body">
-                    <h5 class="card-title">พายแอปเปิ้ล</h5>
-                    <p class="card-text">พายแอปเปิ้ลหอมกรุ่น อบสดใหม่</p>
-                  </div>
-                </div>
-              </div>
+      <div class="row">
+        <!-- Product 1 -->
+        <div class="col-md-4">
+          <div class="card product-card">
+            <img src="https://images.pexels.com/photos/267308/pexels-photo-267308.jpeg?auto=compress&cs=tinysrgb&w=800"
+              alt="เค้กช็อกโกแลต" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">เค้กช็อกโกแลต</h5>
+              <p class="card-text">เค้กเนื้อนุ่ม รสช็อกโกแลตเข้มข้น</p>
+              <button class="btn btn-primary btn-buy" data-name="เค้กช็อกโกแลต" data-price="250">
+                สั่งซื้อ
+              </button>
             </div>
           </div>
         </div>
-        <!-- Controls -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#bakeryCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#bakeryCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <!-- Product 2 -->
+        <div class="col-md-4">
+          <div class="card product-card">
+            <img src="https://images.pexels.com/photos/1055271/pexels-photo-1055271.jpeg?auto=compress&cs=tinysrgb&w=800"
+              alt="ครัวซองต์" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">ครัวซองต์</h5>
+              <p class="card-text">หอมกรุ่นจากเตา กรอบนอกนุ่มใน</p>
+              <button class="btn btn-primary btn-buy" data-name="ครัวซองต์" data-price="120">
+                สั่งซื้อ
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Product 3 -->
+        <div class="col-md-4">
+          <div class="card product-card">
+            <img src="https://images.pexels.com/photos/940872/pexels-photo-940872.jpeg?auto=compress&cs=tinysrgb&w=800"
+              alt="โดนัท" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">โดนัท</h5>
+              <p class="card-text">เนื้อนุ่ม หวานละมุน หลากหลายไส้</p>
+              <button class="btn btn-primary btn-buy" data-name="โดนัท" data-price="80">
+                สั่งซื้อ
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="section-padding">
-    <div class="container">
-      <h3 class="gradient-text">สินค้าของเรา Bakery Store</h3>
-      <!-- Carousel -->
-      <div id="bakeryCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <!-- Slide 1 -->
-          <div class="carousel-item active">
-            <div class="row">
-              <div class="col-md-4">
-                <div class="card product-card">
-                  <img src="https://images.pexels.com/photos/267308/pexels-photo-267308.jpeg?auto=compress&cs=tinysrgb&w=800"
-                    alt="เค้กช็อกโกแลต" class="card-img-top">
-                  <div class="card-body">
-                    <h5 class="card-title">เค้กช็อกโกแลต</h5>
-                    <p class="card-text">เค้กเนื้อนุ่ม รสช็อกโกแลตเข้มข้น</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card product-card">
-                  <img src="https://images.pexels.com/photos/1055271/pexels-photo-1055271.jpeg?auto=compress&cs=tinysrgb&w=800"
-                    alt="ครัวซองต์" class="card-img-top">
-                  <div class="card-body">
-                    <h5 class="card-title">ครัวซองต์</h5>
-                    <p class="card-text">หอมกรุ่นจากเตา กรอบนอกนุ่มใน</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card product-card">
-                  <img src="https://images.pexels.com/photos/940872/pexels-photo-940872.jpeg?auto=compress&cs=tinysrgb&w=800"
-                    alt="โดนัท" class="card-img-top">
-                  <div class="card-body">
-                    <h5 class="card-title">โดนัท</h5>
-                    <p class="card-text">เนื้อนุ่ม หวานละมุน หลากหลายไส้</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Slide 2 -->
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-md-4">
-                <div class="card product-card">
-                  <img src="https://images.pexels.com/photos/792406/pexels-photo-792406.jpeg?auto=compress&cs=tinysrgb&w=800"
-                    alt="มาการอง" class="card-img-top">
-                  <div class="card-body">
-                    <h5 class="card-title">มาการอง</h5>
-                    <p class="card-text">มาการองสีสันสดใส กรอบนอกนุ่มใน</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card product-card">
-                  <img src="https://images.pexels.com/photos/1397309/pexels-photo-1397309.jpeg?auto=compress&cs=tinysrgb&w=800"
-                    alt="คุกกี้" class="card-img-top">
-                  <div class="card-body">
-                    <h5 class="card-title">คุกกี้</h5>
-                    <p class="card-text">คุกกี้กรอบ หอมเนยแท้</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card product-card">
-                  <img src="https://images.pexels.com/photos/5852256/pexels-photo-5852256.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    alt="พายแอปเปิ้ล" class="card-img-top">
-                  <div class="card-body">
-                    <h5 class="card-title">พายแอปเปิ้ล</h5>
-                    <p class="card-text">พายแอปเปิ้ลหอมกรุ่น อบสดใหม่</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+  <!-- Confirm Purchase Modal -->
+  <div class="modal fade" id="confirmPurchaseModal" tabindex="-1" aria-labelledby="confirmPurchaseLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="confirmPurchaseLabel">ยืนยันการสั่งซื้อ</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <!-- Controls -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#bakeryCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#bakeryCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <div class="modal-body">
+          <p>คุณต้องการสั่งซื้อ <span id="productName"></span> ในราคา <span id="productPrice"></span> บาท ใช่หรือไม่?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ยกเลิก</button>
+          <button type="button" class="btn btn-primary" id="confirmPurchase">ยืนยัน</button>
+        </div>
       </div>
     </div>
-  </section>
+  </div>
+
+  <!-- Success Modal -->
+  <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="successLabel">สั่งซื้อสำเร็จ</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>ขอบคุณสำหรับการสั่งซื้อของคุณ!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal">ตกลง</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <footer>
-    <p>&copy; 2024 Apple Store. สงวนลิขสิทธิ์ทุกประการ.</p>
-    <p><a href="#">เงื่อนไขและข้อกำหนด</a> | <a href="#">ความเป็นส่วนตัว</a></p>
+    <p>&copy; 2024 Phichaiyut. สงวนลิขสิทธิ์ทุกประการ.</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const confirmModal = new bootstrap.Modal(document.getElementById('confirmPurchaseModal'));
+    const successModal = new bootstrap.Modal(document.getElementById('successModal'));
+
+    document.querySelectorAll('.btn-buy').forEach(button => {
+      button.addEventListener('click', () => {
+        const productName = button.getAttribute('data-name');
+        const productPrice = button.getAttribute('data-price');
+        document.getElementById('productName').textContent = productName;
+        document.getElementById('productPrice').textContent = productPrice;
+        confirmModal.show();
+      });
+    });
+
+    document.getElementById('confirmPurchase').addEventListener('click', () => {
+      confirmModal.hide();
+      successModal.show();
+    });
+  </script>
 </body>
 
 </html>
