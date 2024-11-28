@@ -31,7 +31,6 @@ header .menu {
   gap: 20px;
   font-weight: 500;
 }
-/* css slider */
 .slider {
   height: 100vh;
   margin-top: -50px;
@@ -69,7 +68,7 @@ header .menu {
 }
 
 .navbar-nav .nav-link:hover {
-  color: #ffcc00; /* เปลี่ยนสีข้อความเมื่อชี้ */
+  color: #ffcc00; 
 }
 
 .navbar-nav .nav-link::after {
@@ -79,13 +78,13 @@ header .menu {
   height: 2px;
   bottom: 0;
   left: 50%;
-  background-color: #ffcc00; /* สีของเส้น */
+  background-color: #ffcc00; 
   transition: all 0.3s ease;
   transform: translateX(-50%);
 }
 
 .navbar-nav .nav-link:hover::after {
-  width: 100%; /* เส้นขยายเต็มความกว้าง */
+  width: 100%; 
 }
 .slider .list .item .content {
   position: absolute;
