@@ -8,14 +8,14 @@
 }
 
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  background-image: url(/img/BG.gif);
-  background-position: center;
-  background-size: cover;
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(/img/cb04b03b38b01def99febb2585a48d1a.gif);
+    background-position: center;
+    background-size: cover;
+  }
 
 section {
     position: relative;
